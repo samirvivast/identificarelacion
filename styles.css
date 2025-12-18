@@ -1,0 +1,125 @@
+/* ===== ESTILO GENERAL ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0f0f0f, #1b1b1b);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #1f1f1f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.05);
+}
+
+/* ===== TÍTULO ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* ===== PREGUNTAS ===== */
+#quiz-box, #result-box {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ===== OPCIONES DE RESPUESTA ===== */
+#options {
+    margin: 20px 0;
+}
+
+.option {
+    margin: 10px 0;
+    background: #2b2b2b;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid #333;
+    transition: 0.2s ease;
+}
+
+.option:hover {
+    background: #3a3a3a;
+}
+
+/* ===== BOTÓN SIGUIENTE ===== */
+#next-btn {
+    background: #00a6ff;
+    padding: 12px 20px;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 12px;
+    transition: 0.2s ease;
+}
+
+#next-btn:hover {
+    background: #008bd1;
+}
+
+/* ===== IMAGEN DE RESULTADO ===== */
+#result-image {
+    width: 70%;
+    max-width: 230px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* ===== BARRA DE PROGRESO ===== */
+.progress-container {
+    width: 100%;
+    background: #333;
+    border-radius: 6px;
+    height: 12px;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    height: 12px;
+    width: 0%;
+    background: #00a6ff;
+    border-radius: 6px;
+    transition: width 0.4s ease;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .container {
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .option {
+        font-size: 0.95em;
+        padding: 10px;
+    }
+
+    #next-btn {
+        font-size: 16px;
+    }
+}
+
+.progress-info {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #ccc;
+}
